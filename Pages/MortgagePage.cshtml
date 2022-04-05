@@ -1,0 +1,66 @@
+﻿@page
+@model Proj5_grad_Ngige.Pages.MortgagePageModel
+@{
+}
+
+<div class="text-center">
+
+
+
+    <h4 class="display-4">Mortgage Calculator</h4>
+
+
+
+    <form method="post">
+
+
+
+        <label asp-for="LoanInput"> Loan Amount </label>
+
+
+
+        <input asp-for="LoanInput" type="text" value="" />
+
+
+
+        <p></p>
+
+
+
+        <label asp-for="InterestInput"> Interest: </label>
+
+
+
+        <input asp-for="InterestInput" type="text" value="" />
+
+
+
+        <p></p>
+
+
+
+        <label asp-for="DurationInput"> Duration: </label>
+
+
+
+        <input asp-for="DurationInput" type="text" value="" />
+
+
+
+        <p></p>
+
+
+
+        <button type="submit">Compute</button>
+
+
+
+    </form>
+
+
+
+    <p>@Model.ReturnValue</p>
+
+
+
+</div>
