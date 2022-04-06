@@ -42,7 +42,7 @@ namespace Proj5_grad_Ngige.Pages
 
                 HttpClient httpClient = new();
 
-                var Result = await httpClient.GetAsync($"https://localhost:44363/api/MortgageCalc?Duration={DurationInput.Value}&Loan={LoanInput.Value}&Interest={InterestInput.Value}");
+                var Result = await httpClient.GetAsync($"https://mortgagecalcfunction20220406070759.azurewebsites.net/api/MortgageAzureCalc?code=U0rlxlf2tDsOayYSy/6J52tEL83O7lG8Hat7AXYytwJEAPO45DDtaQ==&loan={LoanInput.Value}&duration={DurationInput.Value}&interest={InterestInput.Value}");
 
                 string ResultString = await Result.Content.ReadAsStringAsync();
 
